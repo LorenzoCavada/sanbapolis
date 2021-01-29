@@ -34,6 +34,7 @@ function Footer() {
             <a
               href="https://www.google.com/maps/place/Sanb%C3%A0Polis/@46.046804,11.1308422,17z/data=!3m1!4b1!4m5!3m4!1s0x4782741c3dd84083:0xe1221411ae6cb6ef!8m2!3d46.046804!4d11.1330309"
               target="_blank"
+              rel="noreferrer"
               aria-label="Sanbapolis indirizzo"
               title="Sanbapolis indirizzo"
               className="transition-colors duration-300 hover:text-green-800"
@@ -42,11 +43,10 @@ function Footer() {
             </a>
           </div>
         </div>
-        <div>
+        <div className="text-right">
           <p className="font-bold text-gray-900 text-xl">Social</p>
           <div className="flex items-center mt-2 space-x-3">
-            <a href="https://www.instagram.com/sanbapolis/?hl=it" className="text-gray-500 transition-colors duration-300 hover:text-green-700"
-            >
+            <a href="https://www.instagram.com/sanbapolis/?hl=it" className="text-gray-500 transition-colors duration-300 hover:text-green-700 ml-auto">
               <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
                 <circle cx="15" cy="15" r="4" />
                 <path d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z" />
@@ -61,10 +61,6 @@ function Footer() {
               </svg>
             </a>
           </div>
-          <p className="mt-4 text-sm text-gray-500">
-            Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken
-            spare ribs salami.
-        </p>
         </div>
       </div>
       <div className="flex justify-center border-t py-4">
