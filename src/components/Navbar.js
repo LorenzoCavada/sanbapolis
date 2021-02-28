@@ -40,6 +40,9 @@ function Navbar() {
             <li>
               <NavLink name={"Regole Riapertura"} url={"/covid/"} />
             </li>
+            <li>
+              <NavLink name={"News"} url={"/news/"} />
+            </li>
           </ul>
         </nav>
       </div>
