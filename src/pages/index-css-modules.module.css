@@ -1,0 +1,25 @@
+/* .newstitle { 
+	display: flex; 
+	flex-direction: row; 
+} 
+
+.newstitle:before,
+.newstitle:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #447604;
+  margin: auto;
+} */
+
+.newstitle {
+  width: 100%; 
+  padding-left: 2em;
+  border-bottom: 1px solid #447604; 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+} 
+
+.newstitle span { 
+   background:#fff; 
+   padding:0 10px; 
+}

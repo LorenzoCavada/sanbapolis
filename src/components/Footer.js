@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
 
   return (
-    <div className="px-8 lg:px-14 w-full mt-4 max-w-6xl place-self-center place-items-center">
+    <footer className="flex-shrink-0 px-8 lg:px-14 w-full pt-4 max-w-6xl place-self-center place-items-center border-t">
       <div className="grid gap-2 row-gap-6 mb-8 grid-cols-2">
         <div className="space-y-2 text-sm">
           <p className="font-bold text-gray-900 text-xl">Contatti</p>
@@ -13,7 +13,7 @@ function Footer() {
               href="tel:0461-217478"
               aria-label="Sanbapolis numero"
               title="Sanbapolis numero"
-              className="transition-colors duration-300 hover:text-green-800"
+              className="transition-colors duration-300 hover:text-green-500"
             >
               0461 217478
           </a>
@@ -24,7 +24,7 @@ function Footer() {
               href="mailto:info@sanbapolis.it"
               aria-label="Sanbapolis e-mail"
               title="Sanbapolis e-mail"
-              className="transition-colors duration-300 hover:text-green-800"
+              className="transition-colors duration-300 hover:text-green-500"
             >
               info@sanbapolis.it
           </a>
@@ -37,7 +37,7 @@ function Footer() {
               rel="noreferrer"
               aria-label="Sanbapolis indirizzo"
               title="Sanbapolis indirizzo"
-              className="transition-colors duration-300 hover:text-green-800"
+              className="transition-colors duration-300 hover:text-green-500"
             >
               Via della Malpensada, 88, 38123 Trento TN
             </a>
@@ -64,9 +64,9 @@ function Footer() {
         </div>
       </div>
       <div className="flex justify-center border-t py-4">
-        <p className="text-sm text-gray-600">© Copyright {"2021"} Sanbapolis All rights reserved.</p>        
+        <p className="text-sm text-gray-600">© Copyright {(new Date()).getFullYear()} Sanbapolis. All rights reserved.</p>        
       </div>
-    </div>
+    </footer>
   )
 }
 
