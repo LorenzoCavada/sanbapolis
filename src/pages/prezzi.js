@@ -74,7 +74,7 @@ export default function Prezzi() {
           <CardOrari orari={orarioArrampicata} index={1} name="Orario Palestra Arrampicata" />
           <CardOrari orari={orarioSalaPesi} index={2} name="Orario Sala Pesi" />
         </div>
-        <p className="italic my-10 ml-6 font-light"><span className="font-bold">Attenzione,</span> gli orari della sala pesi potrebbero variare in corrispondenza delle partite pallavolo.<br/>Consulta sempre la sezione news per maggiori informazioni.</p>
+        <p className="italic my-10 ml-6 font-light"><span className="font-bold">Attenzione,</span> gli orari della sala pesi potrebbero variare in corrispondenza delle partite di pallavolo.<br/>Consulta sempre la sezione news per maggiori informazioni.</p>
       </div>
     </Layout>
   )
