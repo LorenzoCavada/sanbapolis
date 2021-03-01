@@ -30,7 +30,11 @@ module.exports = {
       blue: colors.blue,
       pink: colors.pink
     },
-    extend: {},
+    extend: {
+      fontFamily:{
+        'poppins': ['Poppins'],
+      },
+    },
   },
   variants: {
     extend: {

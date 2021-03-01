@@ -1,44 +1,81 @@
 import React from "react"
 import Layout from "../components/Layout"
+import CardOrari from "../components/CardOrari"
+import styles from "./index-css-modules.module.css"
+
+const orarioArrampicata = [
+  {
+    "day": "Lunedì",
+    "hour": "9.00 - 23.00"
+  },
+  {
+    "day": "Martedì",
+    "hour": "9.00 - 23.00"
+  },
+  {
+    "day": "Mercoledì",
+    "hour": "9.00 - 23.00"
+  },
+  {
+    "day": "Giovedì",
+    "hour": "9.00 - 23.00"
+  },
+  {
+    "day": "Venerdì",
+    "hour": "9.00 - 23.00"
+  },
+  {
+    "day": "Sabato",
+    "hour": "9.00 - 23.00"
+  },
+  {
+    "day": "Domenica",
+    "hour": "9.00 - 23.00"
+  },
+]
+
+const orarioSalaPesi = [
+  {
+    "day": "Lunedì",
+    "hour": "9.00 - 23.00"
+  },
+  {
+    "day": "Martedì",
+    "hour": "9.00 - 23.00"
+  },
+  {
+    "day": "Mercoledì",
+    "hour": "9.00 - 23.00"
+  },
+  {
+    "day": "Giovedì",
+    "hour": "9.00 - 23.00"
+  },
+  {
+    "day": "Venerdì",
+    "hour": "9.00 - 23.00"
+  },
+  {
+    "day": "Sabato",
+    "hour": "9.00 - 18.00"
+  },
+  {
+    "day": "Domenica",
+    "hour": "CHIUSO"
+  },
+]
 
 export default function Prezzi() {
   return (
     <Layout>
-      <h1 className="text-2xl font-medium mb-2">Prezzi e Orari</h1>
-      <h2 className="font-medium text-sm text-green-800 mb-4 uppercase tracking-wide">
-        Anim nisi dolore nostrud duis cillum dolor qui aliqua laborum est. Consequat proident enim voluptate enim
-        ea in non incididunt tempor qui culpa. Cupidatat veniam nostrud tempor in deserunt reprehenderit
-        deserunt tempor ea laboris voluptate.
-        Labore tempor ullamco cillum tempor do aliqua sunt. Adipisicing sunt eiusmod id consectetur est. Sit eiusmod et in quis.
-        Magna fugiat et sunt dolor non enim sint ullamco exercitation cillum laborum nostrud.
-        Sit incididunt eu culpa voluptate eiusmod aute proident amet eiusmod et est. Eu et nostrud deserunt exercitation excepteur mollit eu minim pariatur.
-        Qui et incididunt Lorem ad nulla voluptate in incididunt. Proident pariatur eu culpa veniam nisi veniam nulla Lorem. Deserunt proident deserunt aliqua
-        ut veniam nostrud deserunt velit.
-        Anim nisi dolore nostrud duis cillum dolor qui aliqua laborum est. Consequat proident enim voluptate enim
-        ea in non incididunt tempor qui culpa. Cupidatat veniam nostrud tempor in deserunt reprehenderit
-        deserunt tempor ea laboris voluptate.
-        Labore tempor ullamco cillum tempor do aliqua sunt. Adipisicing sunt eiusmod id consectetur est. Sit eiusmod et in quis.
-        Magna fugiat et sunt dolor non enim sint ullamco exercitation cillum laborum nostrud.
-        Sit incididunt eu culpa voluptate eiusmod aute proident amet eiusmod et est. Eu et nostrud deserunt exercitation excepteur mollit eu minim pariatur.
-        Qui et incididunt Lorem ad nulla voluptate in incididunt. Proident pariatur eu culpa veniam nisi veniam nulla Lorem. Deserunt proident deserunt aliqua
-        ut veniam nostrud deserunt velit.
-        Anim nisi dolore nostrud duis cillum dolor qui aliqua laborum est. Consequat proident enim voluptate enim
-        ea in non incididunt tempor qui culpa. Cupidatat veniam nostrud tempor in deserunt reprehenderit
-        deserunt tempor ea laboris voluptate.
-        Labore tempor ullamco cillum tempor do aliqua sunt. Adipisicing sunt eiusmod id consectetur est. Sit eiusmod et in quis.
-        Magna fugiat et sunt dolor non enim sint ullamco exercitation cillum laborum nostrud.
-        Sit incididunt eu culpa voluptate eiusmod aute proident amet eiusmod et est. Eu et nostrud deserunt exercitation excepteur mollit eu minim pariatur.
-        Qui et incididunt Lorem ad nulla voluptate in incididunt. Proident pariatur eu culpa veniam nisi veniam nulla Lorem. Deserunt proident deserunt aliqua
-        ut veniam nostrud deserunt velit.
-        Anim nisi dolore nostrud duis cillum dolor qui aliqua laborum est. Consequat proident enim voluptate enim
-        ea in non incididunt tempor qui culpa. Cupidatat veniam nostrud tempor in deserunt reprehenderit
-        deserunt tempor ea laboris voluptate.
-        Labore tempor ullamco cillum tempor do aliqua sunt. Adipisicing sunt eiusmod id consectetur est. Sit eiusmod et in quis.
-        Magna fugiat et sunt dolor non enim sint ullamco exercitation cillum laborum nostrud.
-        Sit incididunt eu culpa voluptate eiusmod aute proident amet eiusmod et est. Eu et nostrud deserunt exercitation excepteur mollit eu minim pariatur.
-        Qui et incididunt Lorem ad nulla voluptate in incididunt. Proident pariatur eu culpa veniam nisi veniam nulla Lorem. Deserunt proident deserunt aliqua
-        ut veniam nostrud deserunt velit.
-          </h2>
+      <div className="mt-20 mx-auto lg:max-w-7xl">
+        <h1 className={"text-4xl font-bold text-green-700 " + styles.newstitle}><span>Prezzi e Orari</span></h1>
+        <div className="my-14">
+          <CardOrari orari={orarioArrampicata} index={1} name="Orario Palestra Arrampicata" />
+          <CardOrari orari={orarioSalaPesi} index={2} name="Orario Sala Pesi" />
+        </div>
+        <p className="italic my-10 ml-6 font-light"><span className="font-bold">Attenzione,</span> gli orari della sala pesi potrebbero variare in corrispondenza delle partite pallavolo.<br/>Consulta sempre la sezione news per maggiori informazioni.</p>
+      </div>
     </Layout>
   )
 }
